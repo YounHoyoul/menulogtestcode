@@ -11,7 +11,7 @@ So that I know which restaurants are currently available
 to run test code, input phpunit.
 
 # Heroku Url
-http://nigel-robots.herokuapp.com/
+https://menulog-testcode.herokuapp.com/
 
 # Travis Test Status
-https://travis-ci.org/YounHoyoul/nigelrobot/builds/141445746
+https://travis-ci.org/YounHoyoul/menulog-testcode/
