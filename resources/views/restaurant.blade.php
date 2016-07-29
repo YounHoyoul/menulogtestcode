@@ -33,8 +33,6 @@
                    success: function(res) {
                        $("#restaurant-list").removeClass('loading');
                        $("#restaurant-list").html(res);
-                       $("img.lazy").Lazy();
-
                        $(".btn-menu").click(function(evt){
                            evt.preventDefault();
                            apiurl = $(this).attr("href");
