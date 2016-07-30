@@ -14,6 +14,10 @@
       }
       .list{
         margin-top : 20px;
+        height : 500px;
+        overflow-y: scroll;
+        border: 1px solid #d0d0d0;
+        padding: 0px 15px;    
       }
       .list .item{
         padding:7px 0px;
@@ -35,6 +39,12 @@
       }
       .contents ul>li{
         display:inline-block;
+      }
+      .menu#menu-list{
+         min-height:300px;
+         margin: 54px 0px;
+         border: 1px solid #d0d0d0;
+         padding: 15px;
       }
       .contents ul>li+li:before{
         content:", ";

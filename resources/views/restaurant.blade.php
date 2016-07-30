@@ -19,6 +19,7 @@
 
 @section('scripts')
 <script>
+   "use strict";
    $(function(){
        $("#btn_search").click(function(){
            if($("[name=search]").val()){ 
@@ -35,17 +36,18 @@
                        $("#restaurant-list").html(res);
                        $(".btn-menu").click(function(evt){
                            evt.preventDefault();
-                           apiurl = $(this).attr("href");
+                           var menu_url = $(this).attr("href");
+                           var restaurant_name = $(this).data("restaurantName");
                            $("#menu-list").html("");
                            $("#menu-list").addClass('loading');
 
                            $.ajax({
-                               url:apiurl,
+                               url:menu_url,
                                dataType:'html',
                                cache: true, 
                                success: function(res) {
                                    $("#menu-list").removeClass('loading');
-                                   $("#menu-list").html(res);
+                                   $("#menu-list").html(res.replace(':RestaurantName',restaurant_name));
                                }
                            });
                        });

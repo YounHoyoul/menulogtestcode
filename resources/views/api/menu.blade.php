@@ -1,7 +1,7 @@
 @foreach($data as $menu)
   <div class="row">
     <div class="col-md-8 col-md-offset-2 text-center">
-      <h3>{{$menu['Title']}}</h3>
+      <h3> Menu of :RestaurantName</h3>
     </div>
     @foreach($menu['Categories'] as $category) 
       <div class="col-md-8 col-md-offset-2">

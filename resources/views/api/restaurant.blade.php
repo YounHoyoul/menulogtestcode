@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="col-xs-3 col-md-3">
-        <a href="/api/menu/{{$restaurant['Id']}}" class="btn btn-default form-control btn-menu">Menu</a>
+        <a href="/api/menu/{{$restaurant['Id']}}" data-restaurant-name="{{$restaurant['Name']}}" class="btn btn-default form-control btn-menu">Menu</a>
       </div>
     </div>
   </div>
