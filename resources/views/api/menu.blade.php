@@ -1,4 +1,4 @@
-@foreach($data as $menu)
+@forelse($data as $menu)
   <div class="row">
     <div class="col-md-8 col-md-offset-2 text-center">
       <h3> Menu of :RestaurantName</h3>
@@ -19,4 +19,11 @@
       </div>
     @endforeach
   </div>
-@endforeach
+@empty
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3> Menu of :RestaurantName</h3>
+      <h5>There is no menu.</h5>
+    </div>
+  </div>
+@endforelse
